@@ -20,7 +20,7 @@
 	</tr>
 </thead>
 		<tbody> 
-		  <c:forEach items="${listCountry}" var="area">
+		  <c:forEach items="${listArea}" var="area">
 		<tr>
 		
 			<td><c:out value="${area.idArea}"/></td>

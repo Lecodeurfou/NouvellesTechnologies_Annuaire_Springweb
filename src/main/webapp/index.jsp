@@ -7,5 +7,7 @@
 <p><a href ="pagePays"> lien controller</a> </p>
 <p><a href ="pageRegion"> page Region</a> </p>
 <p><a href ="pageLangues"> page Langue</a> </p>
+<p><a href ="pageVilles"> page Ville</a> </p>
+<p><a href ="pageRues"> page Rue</a> </p>
 </body>
 </html>

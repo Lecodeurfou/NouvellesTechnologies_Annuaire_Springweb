@@ -37,6 +37,8 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
                 <value>com.projet.model.Country</value>
                 <value>com.projet.model.Area</value>
                 <value>com.projet.model.Languages</value>
+                <value>com.projet.model.City</value>
+                <value>com.projet.model.Street</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -56,6 +58,14 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 <bean id ="languageDao" class="com.projet.dao.LanguageDAO">
 	<property name ="sessionFactory" ref="sessionFactory"/>
 </bean>
+<bean id ="cityDao" class="com.projet.dao.CityDAO">
+	<property name ="sessionFactory" ref="sessionFactory"/>
+</bean>
+<bean id ="streetDao" class="com.projet.dao.streetDAO">
+	<property name ="sessionFactory" ref="sessionFactory"/>
+</bean>
+
+
 
 
     <!-- Declaration des Services -->
@@ -69,6 +79,14 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
     
         <bean id="languageService" class ="com.projet.service.LanguageService">
     	<property name="languageDao" ref="languageDao"/>
+    </bean>
+    
+            <bean id="cityService" class ="com.projet.service.CityService">
+    	<property name="cityDao" ref="cityDao"/>
+    </bean>
+    
+                <bean id="streetService" class ="com.projet.service.StreetService">
+    	<property name="streetDao" ref="streetDao"/>
     </bean>
 
 
