@@ -12,20 +12,22 @@
         <table border="1">
             <thead>
                 <tr>
-                    <th>Identifiant de la rue</th>
-                    <th>Code de la rue</th>
-                    <th>Nom de la rue</th>
+                    <th>ID</th>
+                    <th>ID nom des rues</th>
+                    <th>Id ville</th>
+                    <th>Label nom des rues</th>
                 </tr>
             </thead>
             <tbody>
-                <c:forEach items="${listStreat}" var="rue">
+                <c:forEach items="${listStreet}" var="street">
                     <tr>
-                        <td><c:out value="${streat.idstreat}"/></td>
-                        <td><c:out value="${streat.codestreat}"/></td>
-                        <td><c:out value="${streat.namestreat}"/></td>
+                        <td><c:out value="${street.id}"/></td>
+                        <td><c:out value="${street.idStreetName}"/></td>
+                        <td><c:out value="${street.idCity}"/></td>
+                        <td><c:out value="${street.idStreetNameLabel}"/></td>
                     </tr>
                 </c:forEach>
             </tbody>
         </table>
     </body>
-</html>
+    </html>

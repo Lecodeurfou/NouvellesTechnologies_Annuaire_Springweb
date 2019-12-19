@@ -29,6 +29,64 @@ public class City
     private String idZiplabel;
     
     @Column(name="ID_ZIP", nullable=false)
-    private String ipZip;
+    private String idZip;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public int getIdCity() {
+		return idCity;
+	}
+
+	public void setIdCity(int idCity) {
+		this.idCity = idCity;
+	}
+
+	public String getIdArea() {
+		return idArea;
+	}
+
+	public void setIdArea(String idArea) {
+		this.idArea = idArea;
+	}
+
+	public String getIdRefcode() {
+		return idRefcode;
+	}
+
+	public void setIdRefcode(String idRefcode) {
+		this.idRefcode = idRefcode;
+	}
+
+	public String getIdCityName() {
+		return idCityName;
+	}
+
+	public void setIdCityName(String idCityName) {
+		this.idCityName = idCityName;
+	}
+
+	public String getIdZiplabel() {
+		return idZiplabel;
+	}
+
+	public void setIdZiplabel(String idZiplabel) {
+		this.idZiplabel = idZiplabel;
+	}
+
+	public String getIdZip() {
+		return idZip;
+	}
+
+	public void setIdZip(String idZip) {
+		this.idZip = idZip;
+	}
+
+
 
 }

@@ -22,6 +22,11 @@ public class CountryDAO implements ICountryDAO {
         List<Country> countryList = session.createQuery("from Country").list();
         return countryList;
 	}
+    @Transactional
+    public void ajouterPays(Country country) {
+    Session session = sessionFactory.getCurrentSession();
+    session.persist(country);
+    }
     
 }
 

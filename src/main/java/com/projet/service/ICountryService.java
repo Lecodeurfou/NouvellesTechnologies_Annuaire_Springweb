@@ -6,4 +6,5 @@ import com.projet.model.Country;
 
 public interface ICountryService {
 	public List<Country> recupererListePays();
+	public void ajouterPays(int identifiant, String codeIso);
 }

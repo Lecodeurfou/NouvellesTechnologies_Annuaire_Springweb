@@ -4,26 +4,25 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
- 
+
 @Entity
 @Table(name="street")
-public class Street 
-{
-    @Id
-    @Column(name="ID", nullable=false)
-    private int id;
-    
-    @Column(name="ID_STREET_NAME", nullable=false)
-    private String idName;
-    
-    @Column(name="ID_CITY", nullable=false)
-    private String idCity;
-    
-    @Column(name="STREET_NAME_LABEL", nullable=false)
-    private String idStreetName;
+public class Street {
 
+	@Id
+	@Column(name="ID",nullable=false)
+	private int id;
 	
-    public int getId() {
+	@Column(name="ID_STREET_NAME", nullable=false)
+	private String idStreetName;
+	
+	@Column(name= "ID_CITY",nullable = false)
+	private String idCity;
+	
+	@Column(name="STREET_NAME_LABEL", nullable=false)
+	private String idStreetNameLabel;
+
+	public int getId() {
 		return id;
 	}
 
@@ -31,12 +30,12 @@ public class Street
 		this.id = id;
 	}
 
-	public String getIdName() {
-		return idName;
+	public String getIdStreetName() {
+		return idStreetName;
 	}
 
-	public void setIdName(String idName) {
-		this.idName = idName;
+	public void setIdStreetName(String idStreetName) {
+		this.idStreetName = idStreetName;
 	}
 
 	public String getIdCity() {
@@ -47,13 +46,15 @@ public class Street
 		this.idCity = idCity;
 	}
 
-	public String getIdStreetName() {
-		return idStreetName;
+	public String getIdStreetNameLabel() {
+		return idStreetNameLabel;
 	}
 
-	public void setIdStreetName(String idStreetName) {
-		this.idStreetName = idStreetName;
+	public void setIdStreetNameLabel(String idStreetNameLabel) {
+		this.idStreetNameLabel = idStreetNameLabel;
 	}
+
+
+	
 	
 }
-

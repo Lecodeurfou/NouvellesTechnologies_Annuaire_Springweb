@@ -6,4 +6,6 @@ import com.projet.model.Country;
 public interface ICountryDAO {
 
 		public List<Country> recupererListePays();
+		public void ajouterPays(Country country);
 }
+

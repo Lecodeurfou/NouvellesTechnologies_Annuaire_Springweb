@@ -12,17 +12,26 @@
         <table border="1">
             <thead>
                 <tr>
+                	<th>Identifiant</th>
                     <th>Identifiant de la ville</th>
-                    <th>Code de la ville</th>
+                    <th>Identifiant de la region</th>
+                    <th>Code de la Ville</th>
                     <th>Nom de la ville</th>
+                    <th>Nom de la ZIP</th>
+                    <th>Identifiant de la ZIP</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 <c:forEach items="${listCity}" var="city">
                     <tr>
-                        <td><c:out value="${city.idcity}"/></td>
-                        <td><c:out value="${city.codecity}"/></td>
-                        <td><c:out value="${city.namecity}"/></td>
+                        <td><c:out value="${city.id}"/></td>
+                        <td><c:out value="${city.idCity}"/></td>
+                        <td><c:out value="${city.idArea}"/></td>
+                        <td><c:out value="${city.idRefcode}"/></td>
+                        <td><c:out value="${city.idCityName}"/></td>
+                        <td><c:out value="${city.idZiplabel}"/></td>
+                        <td><c:out value="${city.idZip}"/></td>
                     </tr>
                 </c:forEach>
             </tbody>

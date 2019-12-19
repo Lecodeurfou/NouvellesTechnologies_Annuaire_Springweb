@@ -39,6 +39,7 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
                 <value>com.projet.model.Languages</value>
                 <value>com.projet.model.City</value>
                 <value>com.projet.model.Street</value>
+                <!--    <value>com.projet.autocomplete.SearchDB</value>-->
             </list>
         </property>
         <property name="hibernateProperties">
@@ -61,11 +62,9 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
 <bean id ="cityDao" class="com.projet.dao.CityDAO">
 	<property name ="sessionFactory" ref="sessionFactory"/>
 </bean>
-<bean id ="streetDao" class="com.projet.dao.streetDAO">
+<bean id ="streetDao" class="com.projet.dao.StreetDAO">
 	<property name ="sessionFactory" ref="sessionFactory"/>
 </bean>
-
-
 
 
     <!-- Declaration des Services -->
@@ -77,18 +76,17 @@ http://www.springframework.org/schema/tx http://www.springframework.org/schema/t
     	<property name="areaDao" ref="areaDao"/>
     </bean>
     
-        <bean id="languageService" class ="com.projet.service.LanguageService">
+    <bean id="languageService" class ="com.projet.service.LanguageService">
     	<property name="languageDao" ref="languageDao"/>
     </bean>
     
-            <bean id="cityService" class ="com.projet.service.CityService">
+     <bean id="cityService" class ="com.projet.service.CityService">
     	<property name="cityDao" ref="cityDao"/>
     </bean>
-    
-                <bean id="streetService" class ="com.projet.service.StreetService">
+
+    <bean id="streetService" class ="com.projet.service.StreetService">
     	<property name="streetDao" ref="streetDao"/>
     </bean>
-
 
 <mvc:annotation-driven/>
 

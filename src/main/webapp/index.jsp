@@ -9,5 +9,8 @@
 <p><a href ="pageLangues"> page Langue</a> </p>
 <p><a href ="pageVilles"> page Ville</a> </p>
 <p><a href ="pageRues"> page Rue</a> </p>
+<p><a href ="BarRecherche"> SearchBar</a> </p>
+
+<p>  </p>
 </body>
 </html>
